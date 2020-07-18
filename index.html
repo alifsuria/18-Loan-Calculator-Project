@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap 4 and jquery/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="h-100 row m-0 align-items-center">
+        <div class="col-4 mx-auto my-3">
+            <div class="card bg-dark text-light">
+                <div class="card-body p-5">
+                    <h2 class="text-center"><b>Loan Calculator</b></h2>
+                    <form action="">
+                        <div class="input-group my-3">
+                            <div class="input-group-prepend">
+                                <label class="py-1" for="">Loan Amount: RM </label>
+                            </div>
+                            <input type="number" id="amount" min="1" value="1" class="ml-2 form-control form-control-sm"
+                                onchange="calculator()">
+                        </div>
+                        <div class="input-group my-3">
+                            <div class="input-group-prepend">
+                                <label class="py-1" for="">Interest Rate: % </label>
+                            </div>
+                            <input type="text" id="interest" min="0" max="100" value="10"
+                                class="ml-2 form-control form-control-sm">
+                        </div>
+                        <div class="input-group my-3">
+                            <div class="input-group-prepend">
+                                <label class="py-1" for="">Months to Pay :</label>
+                            </div>
+                            <input type="number" id="month" min="1" max="12" value="1" onchange="calculator()"
+                                class="ml-2 form-control form-control-sm">
+                        </div>
+                        <div id="display" class="text-center"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap 4 and jquery/jquery-3.3.1.js"></script>
+    <script src="bootstrap 4 and jquery/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
